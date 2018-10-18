@@ -1,3 +1,6 @@
+# Compiled cjs files
+lib/
+
 # Logs
 logs
 *.log
