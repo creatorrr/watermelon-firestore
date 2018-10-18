@@ -2,11 +2,11 @@
   "name": "watermelon-firestore",
   "version": "1.0.0",
   "description": "Frestore sync engine for watermelondb. TM",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "transpile": "babel ./src --out-dir ./lib --copy-files",
     "precommit": "npm test",
-    "prepush": "npm run build",
+    "prepush": "npm run transpile",
     "lint": "prettier --write {src,test}/**/*.js",
     "typecheck": "flow",
     "test": "mocha --colors --exit --bail --ui tdd --require @babel/register"
